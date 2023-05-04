@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1100px;
+    margin:0 auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.ul,li{
+    list-style: none;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+   
+   
+}
+
+/* header section */
+
+.header{
+    background-color: #e3e1e1;
+    margin-top: 10px;
+    box-shadow: 0 0 10px 0;
+}
+
+
+.icons{
+    display: flex;
+   justify-content: right;
+   
+}
+
+.icons li{
+    font-size: 25px;
+    padding: 10px;
+}
+
+.call, .iso{
+    display: flex;
+    font-size: 18px;
+    justify-content: right;
+    font-family: Verdana;
+    
+} 
+
+.iso{
+    color:rgb(180, 172, 172)
+}
+
+.facebook:hover{
+    color: rgb(121, 121, 239);
+    cursor: pointer;
+}
+
+.twitter:hover{
+    color: rgb(62, 62, 215);
+    cursor: pointer;
+}
+
+.inbox:hover{
+    color: rgb(228, 65, 65);
+    cursor: pointer;
+}
+
+/* navs */
+
+
+.nav{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    font-family: Verdana;
+   
+}
+    
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+a:hover{
+    color: orangered;
+}
+
+/* form section */
+
+.form{
+    background-color: rgb(226, 125, 75);
+    width: 33%;
+    margin-top: 40px;
+    font-size: 1.2rem;
+    border-radius: 7px;
+}
+
+
+
+.form-heading{
+    margin: 12px;
+    color: whitesmoke;
+    font-family: Verdana;
+
+}
+
+.form-input{
+    display: flex;
+    justify-content: space-between;
+    padding:10px;
+    text-align: center;
+    margin-left: 16px;
+    margin-right: 16px;
+    color: whitesmoke;
+  
+    
+}
+
+.select,.input{
+    width: 58%;
+}
+
+
+.btn{
+    padding: 10px 25px;
+    background-color:  rgb(150, 244, 150);
+    color: black;
+    margin: 30px 0 0 100px;
+}
+
+.btn:hover{
+    background-color: rgb(3, 117, 3);
+    color: whitesmoke;
+}
+    
+/* image css */
+
+
+
+.image{
+   width: 60%;
+   margin: 40px;
+}
+
+p{
+    font-size: 18px;
+    text-align: center;
+    font-family: verdana;
+    padding: 10px;
+}
+
+/* contact section */
+
+.contact{
+    background-color: #363636;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items:center;
+    width: 100%;
+}
+.circle{
+    height: 90px;
+    width: 90px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #2b81c7;
+    margin: 40px 0 0 110px;
+   
+}
+
+.why{
+   
+    padding-left: 35px;
+}
+
+.col-2{
+    background-color: #b82925;
+}
+
+.col-3{
+    background-color: #f3953d;
+}
+
+h2{
+    margin: 12px;
+    
+    margin:10px 0 40px 70px;
+}
+
+/* travel info section */
+
+h3{
+    
+    margin:50px 0 20px 0;
+    font-size: 30px;
+    
+}
+.news{
+    margin: 50px 0 0 0 ;
+}
+
+
+.para{
+    text-align: justify;
+    padding-right:130px;
+    font-family:'Times New Roman';
+    word-wrap: normal;
+}
+
+.travel{
+   margin-right:  200px;
+    width: 200%;
+    
+}
+ 
+.below-text{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    color: #39a2f2;
+}
+
+/* sub-footer section */
+.sub-footer{
+    background-color: #363636;
+    padding: 30px;
+    
+}
+
+.list-style li{
+    display: flex;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #bbbbbb;
+  
+}
+
+
+
+.list-style li a{
+    color: aliceblue;
+}
+
+h4{
+    color: whitesmoke;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.col-4{
+    width: 22%;
+}
+
+/* copyright */
+
+.copyright{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+
+.copyright a{
+    color: rgb(114, 234, 114);
+}
+
+.admin{
+    margin-left: 400px;
+}
+/* responsive page home */
+
+@media all and (max-width: 780px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .form {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 18px;
+  }
+  .image {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .flex {
+    display: block;
+  }
+  .input-padding {
+    display: flex;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .btn {
+    margin: 12px;
+  }
+  .middle-section {
+    display: block;
+    text-align: -webkit-center;
+  }
+  .circle {
+    margin: 0;
+  }
+  .contact h2 {
+    text-align: inherit;
+  }
+  .travels{
+    width: 100%;
+  }
+  .latest-news {
+    width: 100%;
+  }
+  .sub-footer {
+    text-align: center;
+  }
+  .copyright {
+    text-align: center;
+  }
+}
+
+
+/* about us*/
+
+.about-article-img {
+    float: left;
+    width: 200px;
+    margin-right: 32px;
+  }
+  .about-article {
+    padding-top: 24px;
+    width: 65%;
+  }
+  .aboutpage {
+    padding: 24px 0;
+  }
+  .aboutpage h2 {
+    padding-left: 24px;
+  }
+  .about-article p {
+    color: #5c606b;
+    font-size: 18px;
+  }
+ 
+  .icon-circle-about {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: rgb(109, 109, 230);
+  }
+  .icon-circle-about a {
+    font-size: 32px;
+  }
+  .about-diaplay {
+    display: flex;
+  }
+  .about-right a {
+    padding-top: 14px;
+    font-size: 20px;
+  }
+  .about-right {
+    display: flex;
+  }
+  .about-color {
+    color: #2b81c7;
+  }
+  .about-color-2 {
+    color: #b82925;
+  }
+  .about-color-3 {
+    color: #f3953d;
+  }
+  .about-color:hover,
+  .about-color-2:hover,
+  .about-color-3 :hover {
+    color: #df78df;
+  }
+
+/* aboutpage responsive*/
+
+@media all and (max-width: 780px) {
+  .about-contact {
+    width: 100%;
+  }
+  .about-article {
+    width: 100%;
+    padding-bottom: 16px;
+  }
+  .about-diaplay {
+    margin-bottom: 12px;
+  }
+}
+
+  /* tours nd package */
+
+  .tours-heading{
+    padding: 5px;
+    color: #737988;
+  }
+
+  .tours-heading p{
+    font-size: 16px;
+  
+  }
+
+  .tours-heading h2{
+    font-size: 12px;
+
+  }
+  .tour-place {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .tour-place-img {
+    width: 30%;
+    padding-bottom: 38px;
+    padding-top: 38px;
+  }
+
+  .tour-img {
+    border: 1px solid #222;
+    border-radius: 4px;
+  }
+
+  .place-img h4 {
+    font-size: 20px;
+    color: #555555;
+    font-weight: 500;
+  }
+  .btn-tour {
+    background: #a0c249;
+    font-size: 14px;
+    padding: 4px 8px;
+    border: 1px solid #a5a6a7;
+    border-radius: 3px;
+  }
+  
+  .names{
+    color: black;
+  }
+
+  .tour-img {
+    box-shadow: #363636;
+    background-blend-mode: hard-light;
+
+  }
+
+  /* media resposive tour and package */
+
+@media all and (max-width: 780px) {
+  .tour-place-img {
+    width: 100%;
+  }
+}
+
+/* end */
+ 
